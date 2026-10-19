@@ -102,7 +102,7 @@ export const objectionCatalog: readonly ObjectionDefinition[] = [
     label: "Preferência por atendimento humano",
     triggers: ["você é um robô", "quero falar com uma pessoa", "pessoa de verdade", "atendimento humano"],
     authorizedClaims: [],
-    response: "Sou a assistente virtual da Paggo. Posso oferecer uma reunião com um especialista humano e verificar horários, se você quiser.",
+    response: "Eu sou o Anderson, da Paggo. Posso oferecer uma reunião com um especialista humano e verificar horários, se você quiser.",
     source: "docs/case-agente-pedro.html",
     sourceVersion: "2026-10-16",
   },
