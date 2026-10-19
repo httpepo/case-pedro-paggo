@@ -38,6 +38,11 @@ subprompt, o primeiro bloco desse prompt também deve dizer para ler e seguir o
 A pasta `docs/` é local e não deve ser versionada. Preserve sua exclusão no
 `.gitignore`; os documentos continuam sendo referências para o trabalho local.
 
+regras de negócio, mapa de objeções, decisões técnicas e evidências. Atualize-a
+quando o comportamento ou a configuração mudar. Ela descreve a implementação e
+seus limites, sem substituir os requisitos originais. Os documentos em
+pendências antigas como diagnóstico do estado atual.
+
 O briefing original em `docs/case-agente-pedro.html` é a fonte absoluta da
 verdade para o teste técnico: define o que deve ser entregue, o canal permitido,
 os dados de entrada, a agenda, os registros, as objeções e a ordem de avaliação.
