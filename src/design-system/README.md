@@ -24,3 +24,22 @@ pnpm design:tokens
 ```
 
 Depois, valide com `pnpm typecheck` e `pnpm build`.
+
+## Footer institucional
+
+`src/components/site-footer.tsx` compõe o rodapé inspirado no
+[site público da Paggo](https://www.paggo.com.br/), consultado em 19/10/2026.
+Reutiliza `Button` na variante `brand`, o SVG branco local, tipografia e
+espaçamentos do tema. A composição não cria páginas institucionais dentro do
+case: seus links apontam para os destinos oficiais, enquanto o CTA principal
+leva ao formulário `/#cadastro`.
+
+O papel `footerGlow` (`--footer-glow`, utilitário `bg-footer-glow`) registra o
+dourado decorativo da referência na fonte de verdade. O efeito usa gradientes
+CSS estáticos, sem canvas, dependências, fontes remotas ou animações. Texto,
+links e bordas continuam usando `foreground`, `muted-foreground` e `border`,
+com contraste mais legível que as opacidades do site de referência.
+
+Os dados institucionais são identificados como referência da Paggo; o case não
+assume essa identidade. Não há botão fictício de preferências de cookies nem
+gestor de consentimento de terceiros incorporado ao projeto.
