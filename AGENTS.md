@@ -1,8 +1,9 @@
 # Regras obrigatórias do projeto
 
-Este arquivo é o system prompt local do projeto. Ele é a fonte de verdade para
-qualquer agente de desenvolvimento, incluindo Codex, Claude, Cursor, Gemini e
-outros assistentes que trabalhem neste repositório.
+Este arquivo é o system prompt local e a fonte de verdade das instruções de
+desenvolvimento para qualquer agente, incluindo Codex, Claude, Cursor, Gemini e
+outros assistentes que trabalhem neste repositório. Ele não substitui as três
+fontes primárias dos requisitos do produto definidas abaixo.
 
 ## Ordem obrigatória no início de cada tarefa
 
@@ -11,7 +12,8 @@ Antes de responder, planejar, criar arquivos ou editar código:
 1. Leia este `AGENTS.md` integralmente.
 2. Leia `README.md` para entender o produto, os limites atuais e os comandos de
    verificação.
-3. Leia `docs/ANALISE-CASE.md` e, conforme a tarefa, consulte `docs/SPICED.md`,
+   Consulte as três fontes primárias abaixo conforme o assunto da tarefa,
+   incluindo os esclarecimentos do WhatsApp. Consulte também `docs/SPICED.md`,
    `docs/ICP.md`, `docs/branding.md`, `docs/case-agente-pedro.html` e
    `docs/Documento_comercial.pdf`, além dos documentos de produto e arquitetura
    em `docs/01_PRD_Paggo_MVP.pdf`, `docs/02_SRS_Paggo_MVP.pdf`,
@@ -43,27 +45,50 @@ quando o comportamento ou a configuração mudar. Ela descreve a implementação
 seus limites, sem substituir os requisitos originais. Os documentos em
 pendências antigas como diagnóstico do estado atual.
 
-O briefing original em `docs/case-agente-pedro.html` é a fonte absoluta da
-verdade para o teste técnico: define o que deve ser entregue, o canal permitido,
-os dados de entrada, a agenda, os registros, as objeções e a ordem de avaliação.
-Nenhuma decisão arquitetural pode reduzir ou substituir esses requisitos.
+Há três fontes primárias e complementares da verdade para os requisitos:
 
-Os demais documentos detalham o briefing e devem ser interpretados nesta ordem:
+- A conversa completa com Murilo no WhatsApp, disponível localmente em
+  `/Users/pedrohenriquesudariodasilva/Downloads/Murilo/chat.txt` e
+  `/Users/pedrohenriquesudariodasilva/Downloads/Murilo/chat.md`: contém
+  esclarecimentos diretos sobre ICP, SPICED, duração da conversa, agenda,
+  referências visuais e entrega. São duas representações da mesma conversa.
+- `docs/case-agente-pedro.html`: briefing original com entregáveis, canal
+  permitido, dados de entrada, qualificação, agenda, registros, objeções e
+  critérios de avaliação.
+- `docs/Documento_comercial.pdf`: conhecimento autorizado sobre o produto
+  Paggo e suas capacidades documentadas.
+
+Nenhuma dessas fontes é um documento derivado do projeto. Não estabeleça
+precedência automática entre elas: um esclarecimento explícito do WhatsApp deve
+ser considerado junto do briefing e do material comercial. Em conflito real ou
+ambiguidade sem esclarecimento, registre o ponto e peça direção ao usuário antes
+de alterar o requisito. Nenhuma decisão arquitetural ou documento derivado pode
+reduzir, substituir ou contrariar essas fontes.
+
+sanitizada dos esclarecimentos; não substitui os originais. O histórico bruto do
+WhatsApp contém credenciais e dados pessoais: não o copie para arquivos
+versionados, prompts do agente de voz, logs ou documentação pública. As fontes
+locais continuam fora do Git; apenas esclarecimentos necessários e sem segredos
+podem ser registrados na documentação da entrega.
+
+Os demais documentos apoiam a interpretação das fontes primárias:
 
 - `docs/01_PRD_Paggo_MVP.pdf`: produto, jornada, regras comerciais e prioridades.
 - `docs/02_SRS_Paggo_MVP.pdf`: comportamento verificável, estados, contratos e aceite.
 - `docs/03_SAD_Paggo_MVP.pdf`: arquitetura e decisões técnicas propostas; não declara implementação.
 - `docs/04_Matriz_MoSCoW_Paggo_MVP.pdf`: foco de execução e evidência dos sete Must Have.
 - `docs/ANALISE-CASE.md`: interpretação operacional do briefing.
-- `docs/SPICED.md`: orientação de qualificação comercial.
-- `docs/ICP.md`: perfil de cliente ideal, sem criar cortes de desqualificação não fornecidos.
+- `docs/SPICED.md`: reprodução local da orientação de Murilo no WhatsApp em
+  16/10/2026; não é uma regra inventada pelo projeto.
+- `docs/ICP.md`: reprodução local do ICP informado por Murilo no WhatsApp em
+  16/10/2026, sem criar cortes de desqualificação não fornecidos.
 - `docs/branding.md`: orientação visual e de marca.
-- `docs/Documento_comercial.pdf`: conhecimento autorizado sobre o produto Paggo.
 
 Consulte o documento relevante antes de alterar um fluxo, uma regra comercial,
-o posicionamento ou o conteúdo. Se houver conflito ou lacuna, preserve o
-comportamento já documentado e registre a decisão no resultado da tarefa; não
-invente requisitos. PRD, SRS, SAD e MoSCoW estão em estado proposto e não
+o posicionamento ou o conteúdo. Não atribua decisões do projeto a Murilo nem
+trate suas confirmações explícitas como decisões nossas. Lacunas não autorizam
+inventar requisitos; identifique a interpretação adotada e peça esclarecimento
+quando houver conflito. PRD, SRS, SAD e MoSCoW estão em estado proposto e não
 comprovam que uma integração ou recurso já foi implementado.
 
 ### MVP obrigatório do case
