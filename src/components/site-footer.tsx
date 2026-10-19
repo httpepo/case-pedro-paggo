@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/design-system/components/ui/button";
 import paggoLogo from "@/design-system/assets/brand/paggo-white.svg";
 
 const paggoWebsite = "https://www.paggo.com.br";
@@ -64,23 +63,10 @@ export function SiteFooter() {
     <footer className="site-footer" aria-label="Rodapé">
       <span className="footer-glow" aria-hidden="true" />
       <div className="footer-container">
-        <FooterCallToAction />
         <FooterNavigation year={year} />
         <FooterLegal year={year} />
       </div>
     </footer>
-  );
-}
-
-function FooterCallToAction() {
-  return (
-    <section className="footer-cta" aria-labelledby="footer-cta-title">
-      <h2 id="footer-cta-title">Quem constrói o futuro não pode manter o financeiro no passado.</h2>
-      <p>Compartilhe o contexto da sua operação e descubra como a Paggo pode ajudar sua empresa.</p>
-      <Button asChild variant="brand" size="lg" className="mt-2 h-12 px-6 text-base font-normal sm:px-14 sm:text-lg">
-        <Link href="/#cadastro">Fale com a Paggo</Link>
-      </Button>
-    </section>
   );
 }
 

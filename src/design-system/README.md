@@ -41,10 +41,10 @@ nos metadados do app.
 
 `src/components/site-footer.tsx` compõe o rodapé inspirado no
 [site público da Paggo](https://www.paggo.com.br/), consultado em 19/10/2026.
-Reutiliza `Button` na variante `brand`, o SVG branco local, tipografia e
-espaçamentos do tema. A composição não cria páginas institucionais dentro do
-case: seus links apontam para os destinos oficiais, enquanto o CTA principal
-leva ao formulário `/#cadastro`.
+Reutiliza o SVG branco local, tipografia e espaçamentos do tema. A composição
+não cria páginas institucionais dentro do case: seus links apontam para os
+destinos oficiais. O contato principal fica na home, onde o visitante já inicia
+o atendimento pelo formulário.
 
 O papel `footerGlow` (`--footer-glow`, utilitário `bg-footer-glow`) registra o
 dourado decorativo da referência na fonte de verdade. O efeito usa gradientes
