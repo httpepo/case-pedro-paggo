@@ -5,12 +5,16 @@ import { Badge } from "@/design-system/components/ui/badge";
 import { Button } from "@/design-system/components/ui/button";
 import { SiteFooter } from "@/components/site-footer";
 import paggoLogo from "@/design-system/assets/brand/paggo-white.svg";
+import paggoFavicon from "@/design-system/assets/brand/favicon-paggo.svg";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Paggo | Case de qualificação",
   description: "Base de desenvolvimento do agente de qualificação comercial da Paggo.",
   robots: { index: false, follow: false },
+  icons: {
+    icon: { url: paggoFavicon.src, type: "image/svg+xml", sizes: "any" },
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -25,6 +25,18 @@ pnpm design:tokens
 
 Depois, valide com `pnpm typecheck` e `pnpm build`.
 
+## Favicon da aplicação
+
+`assets/brand/favicon-paggo.svg` é o arquivo fornecido pelo usuário, preservado
+sem alterações. Os metadados em `src/app/layout.tsx` importam esse asset local
+como ícone SVG de qualquer tamanho, com URL versionada pelo build.
+
+O próprio SVG usa `prefers-color-scheme`: símbolo escuro nas abas claras e
+branco nas escuras. Esse comportamento acompanha o navegador, independentemente
+do tema escuro padrão da aplicação. A geração de tokens não sobrescreve esse
+arquivo de marca; o favicon genérico gerado em `assets/favicon.svg` não é usado
+nos metadados do app.
+
 ## Footer institucional
 
 `src/components/site-footer.tsx` compõe o rodapé inspirado no
