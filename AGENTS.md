@@ -46,7 +46,8 @@ mapa de objeções, decisões para apresentação e evidências são mantidos ap
 localmente e enviados separadamente pelo usuário. Não os adicione ao Git nem
 inclua links ou menções a esses arquivos nos conteúdos versionados. Preserve os
 arquivos locais. O README deve orientar execução, configuração e arquitetura.
-pendências antigas como diagnóstico do estado atual.
+Especificações, propostas, registros de planejamento e integrações locais para
+esse fluxo também permanecem fora do Git. Preserve seus arquivos locais.
 
 Há três fontes primárias e complementares da verdade para os requisitos:
 

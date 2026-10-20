@@ -34,7 +34,10 @@ node_modules/
 # Documentos locais do case e materiais de referência
 /docs/
 /documentation/
-/openspec/changes/**/*mu-07-system-documentation/
+/openspec/
+/.*/skills/openspec-*/
+/.*/commands/opsx*
+/.*/workflows/opsx-*
 
 # Dados dos visitantes e arquivos temporários de execução
 /.data/
