@@ -33,6 +33,8 @@ node_modules/
 
 # Documentos locais do case e materiais de referência
 /docs/
+/documentation/
+/openspec/changes/**/mu-07-system-documentation/
 
 # Dados dos visitantes e arquivos temporários de execução
 /.data/

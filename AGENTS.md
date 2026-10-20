@@ -12,6 +12,7 @@ Antes de responder, planejar, criar arquivos ou editar código:
 1. Leia este `AGENTS.md` integralmente.
 2. Leia `README.md` para entender o produto, os limites atuais e os comandos de
    verificação.
+3. Leia `docs/ANALISE-CASE.md`.
    Consulte as três fontes primárias abaixo conforme o assunto da tarefa,
    incluindo os esclarecimentos do WhatsApp. Consulte também `docs/SPICED.md`,
    `docs/ICP.md`, `docs/branding.md`, `docs/case-agente-pedro.html` e
@@ -40,9 +41,11 @@ subprompt, o primeiro bloco desse prompt também deve dizer para ler e seguir o
 A pasta `docs/` é local e não deve ser versionada. Preserve sua exclusão no
 `.gitignore`; os documentos continuam sendo referências para o trabalho local.
 
-regras de negócio, mapa de objeções, decisões técnicas e evidências. Atualize-a
-quando o comportamento ou a configuração mudar. Ela descreve a implementação e
-seus limites, sem substituir os requisitos originais. Os documentos em
+O repositório é exclusivamente técnico. Documentos de entrega, regras de negócio,
+mapa de objeções, decisões para apresentação e evidências são mantidos apenas
+localmente e enviados separadamente pelo usuário. Não os adicione ao Git nem
+inclua links ou menções a esses arquivos nos conteúdos versionados. Preserve os
+arquivos locais. O README deve orientar execução, configuração e arquitetura.
 pendências antigas como diagnóstico do estado atual.
 
 Há três fontes primárias e complementares da verdade para os requisitos:
@@ -65,11 +68,9 @@ ambiguidade sem esclarecimento, registre o ponto e peça direção ao usuário a
 de alterar o requisito. Nenhuma decisão arquitetural ou documento derivado pode
 reduzir, substituir ou contrariar essas fontes.
 
-sanitizada dos esclarecimentos; não substitui os originais. O histórico bruto do
-WhatsApp contém credenciais e dados pessoais: não o copie para arquivos
+O histórico bruto do WhatsApp contém credenciais e dados pessoais: não o copie para arquivos
 versionados, prompts do agente de voz, logs ou documentação pública. As fontes
-locais continuam fora do Git; apenas esclarecimentos necessários e sem segredos
-podem ser registrados na documentação da entrega.
+locais e os documentos de entrega continuam fora do Git.
 
 Os demais documentos apoiam a interpretação das fontes primárias:
 
